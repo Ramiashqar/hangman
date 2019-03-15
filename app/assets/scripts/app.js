@@ -5,8 +5,12 @@ const guessesEl = document.querySelector("#guesses");
 let game1;
 
 window.addEventListener("keypress", e => {
-  const guess = String.fromCharCode(e.charCode);
-  game1.makeGuess(guess);
+  if(e.charCode === 13){
+    startGame();
+  } else{
+    const guess = String.fromCharCode(e.charCode);
+    game1.makeGuess(guess);
+  }
   render();
 });
 

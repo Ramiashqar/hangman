@@ -32,7 +32,8 @@ body {
   }
   font-family: sans-serif;
   box-sizing: border-box;
-  color: var(--color-black);
+  color: $color-black;
+  background-color: $color-dark-gray;
 }
 img {
   max-width: 100%;
@@ -40,6 +41,6 @@ img {
 }
 
 ::selection {
-  background-color: var(--color-silver);
-  color: var(--color-black);
+  background-color: $color-silver;
+  color: $color-black;
 }

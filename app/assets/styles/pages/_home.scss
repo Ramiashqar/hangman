@@ -1,0 +1,50 @@
+.header {
+  font-size: 3rem;
+  color:$color-navy;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 3rem;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  padding: 1rem;
+}
+.container {
+  display: flex;
+  font-size: 1.8rem;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-color: $color-silver;
+  margin:2rem 1rem;
+}
+.puzzle {
+  &__text {
+    font-size: 2.2rem;
+    padding-bottom: 1rem;
+    letter-spacing: 0.7rem;
+    font-weight: bold;
+  }
+  &__guesses {
+    color: $color-gray;
+    padding-bottom: 1rem;
+  }
+  &__reset {
+    background-color: rgba($color-black, 0.3);
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    border: none;
+    font-size: 2rem;
+    color: $color-navy;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-top: 3rem;
+    &:hover {
+      cursor: pointer;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}

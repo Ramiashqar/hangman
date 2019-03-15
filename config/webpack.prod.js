@@ -21,12 +21,12 @@ module.exports = env => {
   return {
     entry: {
       main: ["./app/assets/scripts/index.js"],
-      sub: ["./app/assets/scripts/sub-index.js"]
+      // sub: ["./app/assets/scripts/sub-index.js"]
     },
     mode: "production",
     output: {
       filename: "[name]-bundle.js",
-      path: path.resolve(__dirname, "../dist"),
+      path: path.resolve(__dirname, "../docs"),
       publicPath: ""
     },
     module: {
@@ -144,18 +144,18 @@ module.exports = env => {
           NODE_ENV: JSON.stringify(env.NODE_ENV)
         }
       }),
-      new HTMLWebpackPlugin({
-        template: "./app/sub-index.html",
-        filename: "sub-index.html",
-        inject: true,
-        chunks: ["sub"],
-        title: "Webpack Setup 2"
-      }),
+      // new HTMLWebpackPlugin({
+      //   template: "./app/sub-index.html",
+      //   filename: "sub-index.html",
+      //   inject: true,
+      //   chunks: ["sub"],
+      //   title: "Webpack Setup 2"
+      // }),
       new HTMLWebpackPlugin({
         template: "./app/index.html",
         inject: true,
         chunks: ["main"],
-        title: "Webpack Setup"
+        title: "Hangman Game"
       }),
       new minifyPlugin(),
       // new compressionPlugin({

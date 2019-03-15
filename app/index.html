@@ -8,21 +8,16 @@
   <meta name="author" content="Rami Ashqar" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- <link rel="shortcut icon" href="" type="image/png" /> -->
-  <title>Notes App</title>
+  <title>Hangman</title>
 </head>
 
 <body>
-  <h1>Notes App</h1>
-  <h2>Take notes and never forget</h2>
-  <input id="search-text" type="text" placeholder="Filter notes">
-  <select id="filter-by">
-    <option value="byEdited">Sort by last edited</option>
-    <option value="byCreated">Sort by recently created</option>
-    <option value="alphabetical">Sort alphabetically</option>
-  </select>
-  <div id="notes"></div>
-  <button id="create-note">Create Note</button>
+  <h1 class="header">HANGMAN GAME</h1>
+    <div class="container">
+        <div id="puzzle" class="puzzle__text"></div>
+        <p id="guesses" class="puzzle__guesses"></p>
+        <button id="reset" class="puzzle__reset">Reset</button>
+    </div>
 </body>
 
 </html>
